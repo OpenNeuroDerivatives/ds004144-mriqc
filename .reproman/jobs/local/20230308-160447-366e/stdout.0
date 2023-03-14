@@ -1,0 +1,19 @@
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-mriqc--22.0.6.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds004144-mriqc participant --participant-label '002' -w '/scratch1/03201/jbwexler/work_dir/mriqc/ds004144_sub-002' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds004144 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds004144-mriqc
+230309-00:33:11,371 cli IMPORTANT:
+	 
+    Running MRIQC version 22.0.6:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds004144-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds004144-mriqc.
+      * Analysis levels: ['participant'].
+
+230309-00:33:11,673 nipype.workflow INFO:
+	 Building functional MRIQC workflow for files: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds004144-mriqc/sourcedata/raw/sub-002/func/sub-002_task-epr_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds004144-mriqc/sourcedata/raw/sub-002/func/sub-002_task-rest_bold.nii.gz.
+230309-00:33:19,666 nipype.workflow INFO:
+	 Building anatomical MRIQC workflow (</scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds004144-mriqc/sourcedata/raw/sub-002/anat/sub-002_T1w.nii.gz> and </scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds004144-mriqc/sourcedata/raw/sub-002/anat/sub-002_T2w.nii.gz>)..
+230309-00:34:19,881 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+230309-00:34:20,99 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+[ReproMan] waiting for threshold of jobs to complete before continuing...
